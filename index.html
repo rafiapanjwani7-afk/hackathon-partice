@@ -1,82 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hackathon task</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--custom-css -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container-fliud bg-white ">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md py-3 bg-white" data-bs-theme="light">
         <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <!-- Logo -->
+            <a href="#" class="navbar-brand fw-bold fs-3 text-dark d-flex align-items-center gap-1">
+                <img src="images/Meubel House_Logos-05.png" alt="Logo" height="32" style="object-fit: contain;">
+                Furniro
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mt-3 mx-auto px-auto mb-2 mb-lg-0 text-center">
-                  <li class="nav-item">
-                    <a class="nav-link text-dark text-uppercase  px-4" href="#">home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark text-uppercase px-4" href="#">shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark text-uppercase px-4" href="#">about</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark text-uppercase px-4" href="#">contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-muted text-uppercase px-4" href="#"><img src="images/person icon.png" alt=""></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-muted text-uppercase px-4" href="#"><img src="images/serach icon.png" alt=""></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-muted text-uppercase px-4" href="#"><img src="images/heart icon.png" alt=""></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-muted text-uppercase px-4" href="#"><img src="images/cart icon.png" alt=""></a>
-                  </li>
-                 
-              </ul>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Navigation -->
+                <ul class="navbar-nav mx-auto mb-3 mb-md-0 d-flex gap-md-5 gap-3 text-center">
+                    <li class="nav-item"><a href="#" class="nav-link text-dark fw-medium">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark fw-medium">Shop</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark fw-medium">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark fw-medium">Contact</a></li>
+                </ul>
+
+                <!-- Icons -->
+                <div class="icons d-flex gap-4 justify-content-center">
+                    <a href="#"><i class="fa-regular fa-user fa-lg"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart fa-lg"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                </div>
             </div>
         </div>
-      </div>
-      </nav>
-      </div>
-      </div>
-      <div class="container bg-white">
+    </nav>
 
-        <div class="row  mt-4">
-          <div class="col-lg-12 parent col-md-12 col-sm-12">
-            <img src="./images/hero selection.png" alt="" class="w-100">
-          </div>
-          <div class="card w-50 myCard bg-white px-5 mx-5 ms-5 ">
-            <span class="text-secondary mt-2">
-              <h2 class="fw-bold  cardname">DISCOVER OUR</h2> 
-              <h2 class=" fw-bold cardname ">NEW COLLECTION</h2>
-            </span>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quaerat incidunt suscipit, aliquam ipsam quisquam quam qui, autem iure reiciendis nostrum facilis culpa ea sed eaque reprehenderit sequi libero. Ullam.<br>
-              <button class="btn mt-5 buybtn text-capitalize">Buy Now</button>
-            </p>
-
-          </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 offset-lg-6">
+                    <div class="hero-content-box">
+                        <span>New Arrival</span>
+                        <h1>Discover Our New Collection</h1>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                            nec ullamcorper mattis.</p>
+                        <a href="#" class="btn btn-gold rounded-0">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      
+    </section>
 
+    <!-- Browse The Range -->
+    <section class="browse-range text-center">
+        <div class="container">
+            <h2 class="section-title">Browse The Range</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <img src="images/image 106.png" class="img-fluid rounded-3 mb-3" alt="Dining">
+                        <h4 class="fw-bold">Dining</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <img src="images/Image-living room.png" class="img-fluid rounded-3 mb-3" alt="Living">
+                        <h4 class="fw-bold">Living</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <img src="images/Mask Group.png" class="img-fluid rounded-3 mb-3" alt="Bedroom">
+                        <h4 class="fw-bold">Bedroom</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Our Products -->
+    <section class="our-products">
+        <div class="container">
+            <h2 class="section-title text-center">Our Products</h2>
+            <div class="row mt-5">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/image 1.png" class="w-100" alt="Syltherine">
+                            <div class="product-badge bg-danger">-30%</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Syltherine</h5>
+                            <p class="product-desc">Stylish cafe chair</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="product-price">Rp 2.500.000</span>
+                                <span class="price-old">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 (Hover State shown in SS) -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/image 2.png" class="w-100" alt="Leviosa">
+                            <div class="product-overlay" style="opacity: 1;">
+                                <!-- Fixed overlay for demo if needed, but CSS handles hover -->
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Leviosa</h5>
+                            <p class="product-desc">Stylish cafe chair</p>
+                            <span class="product-price">Rp 2.500.000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/image 3.png" class="w-100" alt="Lolito">
+                            <div class="product-badge bg-danger">-50%</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Lolito</h5>
+                            <p class="product-desc">Luxury big sofa</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="product-price">Rp 7.000.000</span>
+                                <span class="price-old">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/image 4.png" class="w-100" alt="Respira">
+                            <div class="product-badge bg-success">New</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Respira</h5>
+                            <p class="product-desc">Outdoor bar table and stool</p>
+                            <span class="product-price">Rp 500.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/Images (1).png" class="w-100" alt="Grifo">
+                            <div class="product-overlay">
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Grifo</h5>
+                            <p class="product-desc">Night lamp</p>
+                            <span class="product-price">Rp 1.500.000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/image 3.png" class="w-100" alt="Muggo">
+                            <div class="product-badge bg-success">New</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Muggo</h5>
+                            <p class="product-desc">Small mug</p>
+                            <span class="product-price">Rp 150.000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/Mask Group.png" class="w-100" alt="Pingky">
+                            <div class="product-badge bg-danger">-50%</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Pingky</h5>
+                            <p class="product-desc">Cute bed set</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="product-price">Rp 7.000.000</span>
+                                <span class="price-old">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/hero selection.png" class="w-100" alt="Potty">
+                            <div class="product-badge bg-success">New</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-light rounded-0 text-primary-gold fw-bold px-4 mb-3">Add to
+                                    cart</button>
+                                <div class="d-flex text-white gap-3">
+                                    <span><i class="bi bi-share"></i> Share</span>
+                                    <span><i class="bi bi-arrow-left-right"></i> Compare</span>
+                                    <span><i class="bi bi-heart"></i> Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-name">Potty</h5>
+                            <p class="product-desc">Minimalist flower pot</p>
+                            <span class="product-price">Rp 500.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <button class="btn btn-outline-gold rounded-0">Show More</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Room Inspiration -->
+    <section class="room-inspiration bg-cream">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 offset-lg-1 ps-lg-5">
+                    <h2 class="fw-bold mb-3 fs-1">50+ Beautiful rooms inspiration</h2>
+                    <p class="text-muted mb-4">Our designer already made a lot of beautiful prototipe of rooms that
+                        inspire you</p>
+                    <button class="btn btn-gold rounded-0 px-5">Explore More</button>
+                </div>
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center position-relative">
+                        <div class="mx-3" style="position: relative; min-width: 400px;">
+                            <img src="images/Image.svg" class="img-fluid" alt="Inspiration 1">
+                            <div class="bg-white p-4"
+                                style="position: absolute; bottom: 40px; left: 40px; opacity: 0.9;">
+                                <span class="text-muted">01 --- Bed Room</span>
+                                <h4 class="fw-bold">Inner Peace</h4>
+                            </div>
+                            <!-- Next Button -->
+                            <button class="btn btn-gold rounded-0 position-absolute" style="bottom: 40px; left: 247px;">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="mx-3 d-none d-md-block" style="min-width: 300px;">
+                            <img src="images/image 1 (1).png" class="img-fluid" alt="Inspiration 2">
+                        </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+                        <!-- Slider Dots -->
+                        <div class="position-absolute" style="bottom: -40px; left: 20px;">
+                            <span class="bi bi-circle-fill text-primary-gold mx-1" style="font-size: 10px;"></span>
+                            <span class="bi bi-circle text-muted mx-1" style="font-size: 10px;"></span>
+                            <span class="bi bi-circle text-muted mx-1" style="font-size: 10px;"></span>
+                            <span class="bi bi-circle text-muted mx-1" style="font-size: 10px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="furniture-gallery py-5">
+        <div class="container-fluid">
+            <div class="text-center mb-5">
+                <p class="text-muted mb-1">Share your setup with</p>
+                <h2 class="fw-bold fs-1" style="color: #3A3A3A;">#FuniroFurniture</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Column 1 (Left Edge) -->
+                <div class="gallery-col col-left-1">
+                    <img src="images/Rectangle 36.png" alt="Shelf" class="img-shelf">
+                    <img src="images/Rectangle 37.png" alt="Yellow Chair" class="img-chair">
+                </div>
+
+                <!-- Column 2 (Left Inner) -->
+                <div class="gallery-col col-left-2">
+                    <img src="images/Rectangle 38.png" alt="Desk" class="img-desk">
+                    <img src="images/Rectangle 38.png" alt="Stools" class="img-stools">
+                </div>
+
+                <!-- Column 3 (Center) -->
+                <div class="gallery-col col-center">
+                    <img src="images/Rectangle 39.png" alt="Dining Room" class="img-dining-main">
+                </div>
+
+                <!-- Column 4 (Right Inner) -->
+                <div class="gallery-col col-right-1">
+                    <img src="images/Rectangle 41.png" alt="Bedroom" class="img-bedroom">
+                    <img src="images/Rectangle 43.png" alt="Frame" class="img-frame">
+                </div>
+
+                <!-- Column 5 (Right Edge) -->
+                <div class="gallery-col col-right-2">
+                    <img src="images/Rectangle 44 (1).png" alt="Brick Wall" class="img-brick">
+                    <img src="images/Rectangle 45.png" alt="Kitchen" class="img-kitchen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5" style="background-color: #FAF3EA;">
+        <div class="container py-4">
+            <div class="row text-start align-items-center">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-trophy fs-1 me-3 text-dark"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">High Quality</h5>
+                            <p class="text-muted mb-0">crafted from top materials</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-patch-check fs-1 me-3 text-dark"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">Warranty Protection</h5>
+                            <p class="text-muted mb-0">Over 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-truck fs-1 me-3 text-dark"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">Free Shipping</h5>
+                            <p class="text-muted mb-0">Order over 150 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-headset fs-1 me-3 text-dark"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">24 / 7 Support</h5>
+                            <p class="text-muted mb-0">Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="fw-bold mb-4">Funiro.</h3>
+                    <p class="text-muted">400 University Drive Suite 200 Coral Gables,<br>FL 33134 USA</p>
+                </div>
+                <div class="col-lg-2 col-6 mb-4">
+                    <h6 class="text-muted mb-4">Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-dark fw-medium">Home</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-dark fw-medium">Shop</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-dark fw-medium">About</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-dark fw-medium">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 mb-4">
+                    <h6 class="text-muted mb-4">Help</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-dark fw-medium">Payment
+                                Options</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-dark fw-medium">Returns</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-dark fw-medium">Privacy
+                                Policies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="text-muted mb-4">Newsletter</h6>
+                    <form class="d-flex">
+                        <input type="email" class="form-control border-0 border-bottom rounded-0 me-2"
+                            placeholder="Enter Your Email Address">
+                        <button class="btn border-0 border-bottom rounded-0 fw-bold" type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-muted mb-0">2023 furino. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Optional JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

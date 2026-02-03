@@ -49,7 +49,7 @@ ul {
 
 /* Hero Section */
 .hero-section {
-    background: url("../images/hero selection.png") center/cover no-repeat;
+    background: url("images/hero img.png") center/cover no-repeat;
     height: 90vh;
     display: flex;
     align-items: center;
